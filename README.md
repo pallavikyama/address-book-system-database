@@ -90,3 +90,11 @@ SELECT first_name FROM address_book WHERE state='Telangana';
 SELECT city,COUNT(first_name) FROM address_book GROUP BY city;
 SELECT state,COUNT(first_name) FROM address_book GROUP BY state; 
 ```
+
+## UC-8-RetrievePersonsAlphabeticallyForaCity
+### To get entries sorted alphabetically by person's name in a particular city 
+```
+SELECT * FROM address_book  WHERE city='Mumbai' ORDER BY first_name;
+SELECT * FROM address_book WHERE city='Hyderabad' ORDER BY first_name ;
+SELECT * FROM address_book WHERE city='Warangal' ORDER BY first_name ;
+```
