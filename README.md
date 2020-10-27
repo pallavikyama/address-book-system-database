@@ -32,3 +32,17 @@ email        VARCHAR(30)
 ```
 DESCRIBE address_book;
 ```
+
+## UC-3-InsertNewContactsToAddressBook
+### To insert data into table
+```
+INSERT INTO address_book(first_name,last_name,address,city,state,zip,phone_number,email) VALUES
+('Pallavi','Kyama','LBNagar','Hyderabad','Telangana','500070','8787878787','kyamap@gmail.com'),
+('Padma','Gaddam','Goa','Goa','Goa','909008','9494949494','padma@gmail.com'),
+('Kalpana','Kyama','JubileeHills','Hyderabad','Telangana','501009','6262626262','kalpana@gmail.com');
+```
+
+### To view all records in table
+```
+SELECT * FROM address_book;
+```
