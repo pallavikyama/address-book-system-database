@@ -46,3 +46,14 @@ INSERT INTO address_book(first_name,last_name,address,city,state,zip,phone_numbe
 ```
 SELECT * FROM address_book;
 ```
+
+## UC-4-EditExistingContactUsingName
+### To edit existing contact person's details using their first_name
+```
+UPDATE address_book SET address='Borivali',city='Mumbai',state='Maharashtra',zip='400092' WHERE first_name='Kalpana';
+```
+
+### To view all records in table
+```
+SELECT * FROM address_book;
+```
