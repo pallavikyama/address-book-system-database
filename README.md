@@ -129,3 +129,9 @@ INSERT INTO address_book(book_name,first_name,last_name,contact_type,address,cit
 ```
 SELECT * FROM address_book;
 ```
+
+## UC-10-UnderstandSizeOfAddressBookByType
+### To count the number of entries in the address book using contact_type
+```
+SELECT contact_type,COUNT(contact_type) FROM address_book GROUP BY contact_type;
+```
