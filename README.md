@@ -68,3 +68,18 @@ DELETE FROM address_book WHERE first_name='Padma';
 ```
 SELECT * FROM address_book;
 ```
+
+## UC-6-RetrievePersonsBelongingToACityOrState
+### To add new contacts
+```
+INSERT INTO address_book(first_name,last_name,address,city,state,zip,phone_number,email) VALUES
+('Srinivasulu','Kyama','Meerpet','Hyderabad','Telangana','500097','8585858787','kyamasri@gmail.com'),
+('Nirmala','Kyama','Kazipet','Warangal','Telangana','506004','9494949394','nirmala@gmail.com'),
+('Sritaran','Kyama','Santacruz East','Mumbai','Maharashtra','400055','6362626262','taran@gmail.com');
+```
+
+### To get data of persons belonging to a city or state
+```
+SELECT first_name FROM address_book WHERE city='Mumbai';
+SELECT first_name FROM address_book WHERE state='Telangana';
+```
