@@ -83,3 +83,10 @@ INSERT INTO address_book(first_name,last_name,address,city,state,zip,phone_numbe
 SELECT first_name FROM address_book WHERE city='Mumbai';
 SELECT first_name FROM address_book WHERE state='Telangana';
 ```
+
+## UC-7-UnderstandSizeOfAddressBookByCityOrState
+### To count the number of entries in the address book using city or state
+```
+SELECT city,COUNT(first_name) FROM address_book GROUP BY city;
+SELECT state,COUNT(first_name) FROM address_book GROUP BY state; 
+```
