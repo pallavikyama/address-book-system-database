@@ -98,3 +98,34 @@ SELECT * FROM address_book  WHERE city='Mumbai' ORDER BY first_name;
 SELECT * FROM address_book WHERE city='Hyderabad' ORDER BY first_name ;
 SELECT * FROM address_book WHERE city='Warangal' ORDER BY first_name ;
 ```
+
+## UC-9-AddBookNameAndTypeFields
+### To add book_name and contact_type fields to address book
+```
+ALTER TABLE address_book ADD book_name VARCHAR(30) FIRST;
+ALTER TABLE address_book ADD contact_type VARCHAR(30) AFTER last_name;
+```
+
+### To get table structure
+```
+DESCRIBE address_book;
+```
+
+### To update rows
+```
+UPDATE address_book SET book_name='MyContacts';
+UPDATE address_book SET contact_type='Family';
+```
+
+### To insert new entries
+```
+INSERT INTO address_book(book_name,first_name,last_name,contact_type,address,city,state,zip,phone_number,email) VALUES
+('NewContacts1','Akhila','Veeramalla','Friend','SriramNagarColony','Nellore','Andhra Pradesh','800097','8584858787','akhilav@gmail.com'),
+('NewContacts1','Padmaja','Gaddam','Profession','Gulmarg','Jammu','Jammu&Kashmir','200001','5555555777','padmaja@gmail.com'),
+('NewContacts2','RajKumar','Kanthamaneni','Profession','Bhimanahalli','Gulbarga','Karnataka','571445','6464123412','rajkumar@gmail.com');
+```
+
+### To view all records in table
+```
+SELECT * FROM address_book;
+```
