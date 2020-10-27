@@ -135,3 +135,14 @@ SELECT * FROM address_book;
 ```
 SELECT contact_type,COUNT(contact_type) FROM address_book GROUP BY contact_type;
 ```
+
+## UC-11-AddAPersonToBothFriendAndFamily
+### To add a person to both family and friend in contact_type field
+```
+INSERT INTO address_book (book_name,first_name,last_name,contact_type,address,city,state,zip,phone_number,email) VALUES('MyContacts','Kalpana','Kyama','Friend','Borivali','Mumbai','Maharashtra','400092','6262626262','kalpana@gmail.com');
+```
+
+### To view all records in table
+```
+SELECT * FROM address_book;
+```
