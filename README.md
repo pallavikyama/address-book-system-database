@@ -57,3 +57,14 @@ UPDATE address_book SET address='Borivali',city='Mumbai',state='Maharashtra',zip
 ```
 SELECT * FROM address_book;
 ```
+
+## UC-5-DeleteExistingContactUsingName
+### To delete existing contact person's details using their first_name
+```
+DELETE FROM address_book WHERE first_name='Padma';
+```
+
+### To view all records in table
+```
+SELECT * FROM address_book;
+```
